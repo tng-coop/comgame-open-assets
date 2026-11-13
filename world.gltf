@@ -1,0 +1,4036 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "tng.coop/comgame Open Virtual World Builder (ISO/IEC 12113 + OMI)",
+    "copyright": "CC0-1.0 / TNG Workers Cooperative"
+  },
+  "extensionsUsed": [
+    "OMI_physics_shape",
+    "OMI_physics_body",
+    "OMI_spawn_point",
+    "OMI_seat",
+    "OMI_link"
+  ],
+  "extensions": {
+    "OMI_physics_shape": {
+      "shapes": [
+        {
+          "type": "box",
+          "box": {
+            "size": [
+              15.2,
+              2.72,
+              7.4
+            ]
+          }
+        },
+        {
+          "type": "box",
+          "box": {
+            "size": [
+              10.4,
+              2.24,
+              6.8
+            ]
+          }
+        },
+        {
+          "type": "box",
+          "box": {
+            "size": [
+              10.8,
+              2.24,
+              6.8
+            ]
+          }
+        },
+        {
+          "type": "box",
+          "box": {
+            "size": [
+              4.6,
+              1.68,
+              3.8
+            ]
+          }
+        },
+        {
+          "type": "box",
+          "box": {
+            "size": [
+              16,
+              2.56,
+              0.4
+            ]
+          }
+        },
+        {
+          "type": "box",
+          "box": {
+            "size": [
+              0.4,
+              2.56,
+              10.4
+            ]
+          }
+        },
+        {
+          "type": "box",
+          "box": {
+            "size": [
+              6.4,
+              2.56,
+              0.4
+            ]
+          }
+        },
+        {
+          "type": "box",
+          "box": {
+            "size": [
+              0.4,
+              2.56,
+              3.6
+            ]
+          }
+        },
+        {
+          "type": "box",
+          "box": {
+            "size": [
+              3.68,
+              0.76,
+              1.44
+            ]
+          }
+        },
+        {
+          "type": "box",
+          "box": {
+            "size": [
+              2.72,
+              0.76,
+              1.04
+            ]
+          }
+        },
+        {
+          "type": "cylinder",
+          "cylinder": {
+            "radius": 1.36,
+            "height": 0.96
+          }
+        },
+        {
+          "type": "cylinder",
+          "cylinder": {
+            "radius": 1.04,
+            "height": 0.64
+          }
+        },
+        {
+          "type": "cylinder",
+          "cylinder": {
+            "radius": 0.88,
+            "height": 2.576
+          }
+        },
+        {
+          "type": "cylinder",
+          "cylinder": {
+            "radius": 0.8,
+            "height": 2.24
+          }
+        },
+        {
+          "type": "cylinder",
+          "cylinder": {
+            "radius": 0.88,
+            "height": 2.464
+          }
+        },
+        {
+          "type": "cylinder",
+          "cylinder": {
+            "radius": 0.72,
+            "height": 2.128
+          }
+        },
+        {
+          "type": "cylinder",
+          "cylinder": {
+            "radius": 0.8,
+            "height": 2.352
+          }
+        },
+        {
+          "type": "cylinder",
+          "cylinder": {
+            "radius": 0.76,
+            "height": 2.128
+          }
+        },
+        {
+          "type": "cylinder",
+          "cylinder": {
+            "radius": 0.68,
+            "height": 2.016
+          }
+        },
+        {
+          "type": "cylinder",
+          "cylinder": {
+            "radius": 0.64,
+            "height": 1.9712
+          }
+        },
+        {
+          "type": "cylinder",
+          "cylinder": {
+            "radius": 0.84,
+            "height": 2.352
+          }
+        },
+        {
+          "type": "cylinder",
+          "cylinder": {
+            "radius": 0.76,
+            "height": 2.24
+          }
+        }
+      ]
+    }
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "TNGCooperativeVillage",
+      "nodes": [
+        1,
+        2,
+        6,
+        10,
+        14,
+        18,
+        65,
+        67,
+        69,
+        71,
+        73,
+        75,
+        77,
+        79,
+        81,
+        83,
+        85,
+        87,
+        89,
+        91,
+        93,
+        95,
+        97,
+        99,
+        101,
+        103,
+        105,
+        107,
+        109,
+        111,
+        113,
+        115,
+        117,
+        119,
+        121,
+        123,
+        125,
+        127,
+        129,
+        131,
+        133,
+        135,
+        137,
+        139,
+        141,
+        143,
+        145,
+        147
+      ],
+      "extras": {
+        "worldWidth": 2400,
+        "worldHeight": 1600,
+        "unitsPerMeter": 25,
+        "originX": 1200,
+        "originZ": 800,
+        "streamY1": 1235,
+        "streamY2": 1315,
+        "podium": {
+          "x": 1095,
+          "y": 428,
+          "radius": 46
+        }
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "name": "VillageGround_Visual",
+      "mesh": 0,
+      "scale": [
+        96,
+        0.08,
+        64
+      ]
+    },
+    {
+      "name": "VillageGround",
+      "translation": [
+        0,
+        -0.04,
+        0
+      ],
+      "children": [
+        0
+      ],
+      "extras": {
+        "comgameKind": "terrain",
+        "worldW": 2400,
+        "worldH": 1600,
+        "unitsPerMeter": 25
+      }
+    },
+    {
+      "name": "VillagePlazaSpawn",
+      "translation": [
+        0,
+        0,
+        1.2
+      ],
+      "extensions": {
+        "OMI_spawn_point": {
+          "title": "Village Plaza",
+          "team": "villagers",
+          "group": "default"
+        }
+      },
+      "extras": {
+        "comgameKind": "spawn",
+        "wx": 1200,
+        "wz": 830
+      }
+    },
+    {
+      "name": "AssemblyHall_Roof_Visual",
+      "mesh": 1,
+      "scale": [
+        15.84,
+        1.176,
+        8.04
+      ]
+    },
+    {
+      "name": "AssemblyHall_Roof",
+      "translation": [
+        0,
+        1.948,
+        0
+      ],
+      "children": [
+        3
+      ]
+    },
+    {
+      "name": "AssemblyHall_Visual",
+      "mesh": 2,
+      "scale": [
+        15.2,
+        2.72,
+        7.4
+      ]
+    },
+    {
+      "name": "AssemblyHall",
+      "translation": [
+        0,
+        1.36,
+        -20.3
+      ],
+      "children": [
+        5,
+        4
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 0
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "building",
+        "id": "assembly",
+        "x": 1010,
+        "y": 200,
+        "w": 380,
+        "h": 185,
+        "wallH": 68,
+        "roofH": 42,
+        "roof": "#6d4c3d",
+        "roofTrim": "#4f3529",
+        "wall": "#dfd3c3",
+        "doorX": 1200
+      }
+    },
+    {
+      "name": "CoopBakery_Roof_Visual",
+      "mesh": 3,
+      "scale": [
+        11.04,
+        0.952,
+        7.44
+      ]
+    },
+    {
+      "name": "CoopBakery_Roof",
+      "translation": [
+        0,
+        1.596,
+        0
+      ],
+      "children": [
+        7
+      ]
+    },
+    {
+      "name": "CoopBakery_Visual",
+      "mesh": 4,
+      "scale": [
+        10.4,
+        2.24,
+        6.8
+      ]
+    },
+    {
+      "name": "CoopBakery",
+      "translation": [
+        -25.6,
+        1.12,
+        -11.8
+      ],
+      "children": [
+        9,
+        8
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 1
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "building",
+        "id": "bakery",
+        "x": 430,
+        "y": 420,
+        "w": 260,
+        "h": 170,
+        "wallH": 56,
+        "roofH": 34,
+        "roof": "#b55239",
+        "roofTrim": "#843825",
+        "wall": "#eadbc8",
+        "doorX": 560
+      }
+    },
+    {
+      "name": "ToolWorkshop_Roof_Visual",
+      "mesh": 5,
+      "scale": [
+        11.44,
+        0.952,
+        7.44
+      ]
+    },
+    {
+      "name": "ToolWorkshop_Roof",
+      "translation": [
+        0,
+        1.596,
+        0
+      ],
+      "children": [
+        11
+      ]
+    },
+    {
+      "name": "ToolWorkshop_Visual",
+      "mesh": 6,
+      "scale": [
+        10.8,
+        2.24,
+        6.8
+      ]
+    },
+    {
+      "name": "ToolWorkshop",
+      "translation": [
+        -25.8,
+        1.12,
+        9
+      ],
+      "children": [
+        13,
+        12
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 2
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "building",
+        "id": "workshop",
+        "x": 420,
+        "y": 940,
+        "w": 270,
+        "h": 170,
+        "wallH": 56,
+        "roofH": 34,
+        "roof": "#436278",
+        "roofTrim": "#2d4454",
+        "wall": "#d8d2c5",
+        "doorX": 555
+      }
+    },
+    {
+      "name": "GardenShed_Roof_Visual",
+      "mesh": 7,
+      "scale": [
+        5.24,
+        0.672,
+        4.44
+      ]
+    },
+    {
+      "name": "GardenShed_Roof",
+      "translation": [
+        0,
+        1.176,
+        0
+      ],
+      "children": [
+        15
+      ]
+    },
+    {
+      "name": "GardenShed_Visual",
+      "mesh": 8,
+      "scale": [
+        4.6,
+        1.68,
+        3.8
+      ]
+    },
+    {
+      "name": "GardenShed",
+      "translation": [
+        31.1,
+        0.84,
+        -16.5
+      ],
+      "children": [
+        17,
+        16
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 3
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "building",
+        "id": "gardenShed",
+        "x": 1920,
+        "y": 340,
+        "w": 115,
+        "h": 95,
+        "wallH": 42,
+        "roofH": 24,
+        "roof": "#5f7a4b",
+        "roofTrim": "#405432",
+        "wall": "#dfd5c5",
+        "doorX": 1977
+      }
+    },
+    {
+      "name": "TNGOffice_Floor_Visual",
+      "mesh": 9,
+      "scale": [
+        15.84,
+        0.032,
+        11.04
+      ]
+    },
+    {
+      "name": "TNGOffice_Floor",
+      "translation": [
+        25.6,
+        0.016,
+        4.8
+      ],
+      "children": [
+        19
+      ]
+    },
+    {
+      "name": "TNGOffice_Roof_Visual",
+      "mesh": 10,
+      "scale": [
+        16.72,
+        1.064,
+        11.92
+      ]
+    },
+    {
+      "name": "TNGOffice_Roof",
+      "translation": [
+        25.6,
+        3.092,
+        4.8
+      ],
+      "children": [
+        21
+      ],
+      "extras": {
+        "comgameRole": "cutawayRoof"
+      }
+    },
+    {
+      "name": "TNGOffice_WallNorth_Visual",
+      "mesh": 11,
+      "scale": [
+        16,
+        2.56,
+        0.4
+      ]
+    },
+    {
+      "name": "TNGOffice_WallNorth",
+      "translation": [
+        25.6,
+        1.28,
+        -0.6
+      ],
+      "children": [
+        23
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 4
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "wallCollider",
+        "buildingId": "tngOffice",
+        "wallId": "north",
+        "x": 1640,
+        "y": 780,
+        "w": 400,
+        "h": 10
+      }
+    },
+    {
+      "name": "TNGOffice_WallEast_Visual",
+      "mesh": 11,
+      "scale": [
+        0.4,
+        2.56,
+        10.4
+      ]
+    },
+    {
+      "name": "TNGOffice_WallEast",
+      "translation": [
+        33.4,
+        1.28,
+        4.8
+      ],
+      "children": [
+        25
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 5
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "wallCollider",
+        "buildingId": "tngOffice",
+        "wallId": "east",
+        "x": 2030,
+        "y": 790,
+        "w": 10,
+        "h": 260
+      }
+    },
+    {
+      "name": "TNGOffice_WallSouthWest_Visual",
+      "mesh": 11,
+      "scale": [
+        6.4,
+        2.56,
+        0.4
+      ]
+    },
+    {
+      "name": "TNGOffice_WallSouthWest",
+      "translation": [
+        20.8,
+        1.28,
+        10.2
+      ],
+      "children": [
+        27
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 6
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "wallCollider",
+        "buildingId": "tngOffice",
+        "wallId": "southWest",
+        "x": 1640,
+        "y": 1050,
+        "w": 160,
+        "h": 10
+      }
+    },
+    {
+      "name": "TNGOffice_WallSouthEast_Visual",
+      "mesh": 11,
+      "scale": [
+        6.4,
+        2.56,
+        0.4
+      ]
+    },
+    {
+      "name": "TNGOffice_WallSouthEast",
+      "translation": [
+        30.4,
+        1.28,
+        10.2
+      ],
+      "children": [
+        29
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 6
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "wallCollider",
+        "buildingId": "tngOffice",
+        "wallId": "southEast",
+        "x": 1880,
+        "y": 1050,
+        "w": 160,
+        "h": 10
+      }
+    },
+    {
+      "name": "TNGOffice_WallWestNorth_Visual",
+      "mesh": 11,
+      "scale": [
+        0.4,
+        2.56,
+        3.6
+      ]
+    },
+    {
+      "name": "TNGOffice_WallWestNorth",
+      "translation": [
+        17.8,
+        1.28,
+        1.4
+      ],
+      "children": [
+        31
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 7
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "wallCollider",
+        "buildingId": "tngOffice",
+        "wallId": "westNorth",
+        "x": 1640,
+        "y": 790,
+        "w": 10,
+        "h": 90
+      }
+    },
+    {
+      "name": "TNGOffice_WallWestSouth_Visual",
+      "mesh": 11,
+      "scale": [
+        0.4,
+        2.56,
+        3.6
+      ]
+    },
+    {
+      "name": "TNGOffice_WallWestSouth",
+      "translation": [
+        17.8,
+        1.28,
+        8.2
+      ],
+      "children": [
+        33
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 7
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "wallCollider",
+        "buildingId": "tngOffice",
+        "wallId": "westSouth",
+        "x": 1640,
+        "y": 960,
+        "w": 10,
+        "h": 90
+      }
+    },
+    {
+      "name": "TNGOffice_MeetingTable_Visual",
+      "mesh": 12,
+      "scale": [
+        3.68,
+        0.76,
+        1.44
+      ]
+    },
+    {
+      "name": "TNGOffice_MeetingTable",
+      "translation": [
+        25.6,
+        0.38,
+        3.52
+      ],
+      "children": [
+        35
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 8
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "furnitureCollider",
+        "buildingId": "tngOffice",
+        "id": "tngMeetingTable",
+        "furnitureType": "meetingTable",
+        "monitorFacing": "",
+        "vx": 1790,
+        "vy": 866,
+        "vw": 100,
+        "vh": 44,
+        "x": 1794,
+        "y": 870,
+        "w": 92,
+        "h": 36,
+        "elevH": 19
+      }
+    },
+    {
+      "name": "TNGOffice_DevDeskNW_Visual",
+      "mesh": 13,
+      "scale": [
+        2.72,
+        0.76,
+        1.04
+      ]
+    },
+    {
+      "name": "TNGOffice_DevDeskNW",
+      "translation": [
+        20.08,
+        0.38,
+        0.76
+      ],
+      "children": [
+        37
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 9
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "furnitureCollider",
+        "buildingId": "tngOffice",
+        "id": "tngDeskNW",
+        "furnitureType": "devDesk",
+        "monitorFacing": "south",
+        "vx": 1666,
+        "vy": 804,
+        "vw": 72,
+        "vh": 30,
+        "x": 1668,
+        "y": 806,
+        "w": 68,
+        "h": 26,
+        "elevH": 19
+      }
+    },
+    {
+      "name": "TNGOffice_DevDeskSE_Visual",
+      "mesh": 13,
+      "scale": [
+        2.72,
+        0.76,
+        1.04
+      ]
+    },
+    {
+      "name": "TNGOffice_DevDeskSE",
+      "translation": [
+        31.12,
+        0.38,
+        8.28
+      ],
+      "children": [
+        39
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 9
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "furnitureCollider",
+        "buildingId": "tngOffice",
+        "id": "tngDeskSE",
+        "furnitureType": "devDesk",
+        "monitorFacing": "north",
+        "vx": 1942,
+        "vy": 992,
+        "vw": 72,
+        "vh": 30,
+        "x": 1944,
+        "y": 994,
+        "w": 68,
+        "h": 26,
+        "elevH": 19
+      }
+    },
+    {
+      "name": "TNGOffice_PresentationScreen_Visual",
+      "mesh": 14,
+      "scale": [
+        3.12,
+        1.76,
+        0.12
+      ]
+    },
+    {
+      "name": "TNGOffice_PresentationScreen",
+      "translation": [
+        25.6,
+        1.36,
+        -0.32
+      ],
+      "children": [
+        41
+      ],
+      "extras": {
+        "comgameKind": "officeScreen",
+        "buildingId": "tngOffice",
+        "x": 1840,
+        "y": 792,
+        "w": 78,
+        "h": 44,
+        "elevY": 34
+      }
+    },
+    {
+      "name": "TNGOffice_PublicNoticeBoard_Visual",
+      "mesh": 15,
+      "scale": [
+        1.84,
+        1.2,
+        0.12
+      ]
+    },
+    {
+      "name": "TNGOffice_PublicNoticeBoard",
+      "translation": [
+        30.48,
+        1.24,
+        -0.3
+      ],
+      "children": [
+        43
+      ],
+      "extensions": {
+        "OMI_link": {
+          "uri": "https://tng.coop/",
+          "title": "TNG Workers Cooperative — Official Notice Board (Article 6)"
+        }
+      },
+      "extras": {
+        "comgameKind": "noticeBoard",
+        "id": "tngNoticeBoard",
+        "buildingId": "tngOffice",
+        "x": 1962,
+        "y": 793,
+        "standX": 1962,
+        "standY": 826,
+        "w": 46,
+        "h": 30,
+        "elevY": 31
+      }
+    },
+    {
+      "name": "seat_tng_m1_Cushion",
+      "mesh": 16,
+      "translation": [
+        0,
+        0.42,
+        0
+      ],
+      "scale": [
+        0.64,
+        0.12,
+        0.64
+      ]
+    },
+    {
+      "name": "seat_tng_m1",
+      "translation": [
+        24.48,
+        0,
+        2.04
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "children": [
+        45
+      ],
+      "extensions": {
+        "OMI_seat": {
+          "back": [
+            0,
+            0.42,
+            -0.22
+          ],
+          "foot": [
+            0,
+            0,
+            0.28
+          ],
+          "knee": [
+            0,
+            0.42,
+            0.22
+          ],
+          "angle": 1.5708
+        }
+      },
+      "extras": {
+        "comgameKind": "seat",
+        "id": "seat_tng_m1",
+        "buildingId": "tngOffice",
+        "seatGroup": "meeting",
+        "x": 1812,
+        "y": 851,
+        "yaw": 0,
+        "dir": "down"
+      }
+    },
+    {
+      "name": "seat_tng_m2_Cushion",
+      "mesh": 16,
+      "translation": [
+        0,
+        0.42,
+        0
+      ],
+      "scale": [
+        0.64,
+        0.12,
+        0.64
+      ]
+    },
+    {
+      "name": "seat_tng_m2",
+      "translation": [
+        25.6,
+        0,
+        2.04
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "children": [
+        47
+      ],
+      "extensions": {
+        "OMI_seat": {
+          "back": [
+            0,
+            0.42,
+            -0.22
+          ],
+          "foot": [
+            0,
+            0,
+            0.28
+          ],
+          "knee": [
+            0,
+            0.42,
+            0.22
+          ],
+          "angle": 1.5708
+        }
+      },
+      "extras": {
+        "comgameKind": "seat",
+        "id": "seat_tng_m2",
+        "buildingId": "tngOffice",
+        "seatGroup": "meeting",
+        "x": 1840,
+        "y": 851,
+        "yaw": 0,
+        "dir": "down"
+      }
+    },
+    {
+      "name": "seat_tng_m3_Cushion",
+      "mesh": 16,
+      "translation": [
+        0,
+        0.42,
+        0
+      ],
+      "scale": [
+        0.64,
+        0.12,
+        0.64
+      ]
+    },
+    {
+      "name": "seat_tng_m3",
+      "translation": [
+        26.72,
+        0,
+        2.04
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "children": [
+        49
+      ],
+      "extensions": {
+        "OMI_seat": {
+          "back": [
+            0,
+            0.42,
+            -0.22
+          ],
+          "foot": [
+            0,
+            0,
+            0.28
+          ],
+          "knee": [
+            0,
+            0.42,
+            0.22
+          ],
+          "angle": 1.5708
+        }
+      },
+      "extras": {
+        "comgameKind": "seat",
+        "id": "seat_tng_m3",
+        "buildingId": "tngOffice",
+        "seatGroup": "meeting",
+        "x": 1868,
+        "y": 851,
+        "yaw": 0,
+        "dir": "down"
+      }
+    },
+    {
+      "name": "seat_tng_m4_Cushion",
+      "mesh": 16,
+      "translation": [
+        0,
+        0.42,
+        0
+      ],
+      "scale": [
+        0.64,
+        0.12,
+        0.64
+      ]
+    },
+    {
+      "name": "seat_tng_m4",
+      "translation": [
+        24.48,
+        0,
+        5
+      ],
+      "rotation": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "children": [
+        51
+      ],
+      "extensions": {
+        "OMI_seat": {
+          "back": [
+            0,
+            0.42,
+            -0.22
+          ],
+          "foot": [
+            0,
+            0,
+            0.28
+          ],
+          "knee": [
+            0,
+            0.42,
+            0.22
+          ],
+          "angle": 1.5708
+        }
+      },
+      "extras": {
+        "comgameKind": "seat",
+        "id": "seat_tng_m4",
+        "buildingId": "tngOffice",
+        "seatGroup": "meeting",
+        "x": 1812,
+        "y": 925,
+        "yaw": 3.1416,
+        "dir": "up"
+      }
+    },
+    {
+      "name": "seat_tng_m5_Cushion",
+      "mesh": 16,
+      "translation": [
+        0,
+        0.42,
+        0
+      ],
+      "scale": [
+        0.64,
+        0.12,
+        0.64
+      ]
+    },
+    {
+      "name": "seat_tng_m5",
+      "translation": [
+        25.6,
+        0,
+        5
+      ],
+      "rotation": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "children": [
+        53
+      ],
+      "extensions": {
+        "OMI_seat": {
+          "back": [
+            0,
+            0.42,
+            -0.22
+          ],
+          "foot": [
+            0,
+            0,
+            0.28
+          ],
+          "knee": [
+            0,
+            0.42,
+            0.22
+          ],
+          "angle": 1.5708
+        }
+      },
+      "extras": {
+        "comgameKind": "seat",
+        "id": "seat_tng_m5",
+        "buildingId": "tngOffice",
+        "seatGroup": "meeting",
+        "x": 1840,
+        "y": 925,
+        "yaw": 3.1416,
+        "dir": "up"
+      }
+    },
+    {
+      "name": "seat_tng_m6_Cushion",
+      "mesh": 16,
+      "translation": [
+        0,
+        0.42,
+        0
+      ],
+      "scale": [
+        0.64,
+        0.12,
+        0.64
+      ]
+    },
+    {
+      "name": "seat_tng_m6",
+      "translation": [
+        26.72,
+        0,
+        5
+      ],
+      "rotation": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "children": [
+        55
+      ],
+      "extensions": {
+        "OMI_seat": {
+          "back": [
+            0,
+            0.42,
+            -0.22
+          ],
+          "foot": [
+            0,
+            0,
+            0.28
+          ],
+          "knee": [
+            0,
+            0.42,
+            0.22
+          ],
+          "angle": 1.5708
+        }
+      },
+      "extras": {
+        "comgameKind": "seat",
+        "id": "seat_tng_m6",
+        "buildingId": "tngOffice",
+        "seatGroup": "meeting",
+        "x": 1868,
+        "y": 925,
+        "yaw": 3.1416,
+        "dir": "up"
+      }
+    },
+    {
+      "name": "seat_tng_nw1_Cushion",
+      "mesh": 16,
+      "translation": [
+        0,
+        0.42,
+        0
+      ],
+      "scale": [
+        0.64,
+        0.12,
+        0.64
+      ]
+    },
+    {
+      "name": "seat_tng_nw1",
+      "translation": [
+        19.44,
+        0,
+        2
+      ],
+      "rotation": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "children": [
+        57
+      ],
+      "extensions": {
+        "OMI_seat": {
+          "back": [
+            0,
+            0.42,
+            -0.22
+          ],
+          "foot": [
+            0,
+            0,
+            0.28
+          ],
+          "knee": [
+            0,
+            0.42,
+            0.22
+          ],
+          "angle": 1.5708
+        }
+      },
+      "extras": {
+        "comgameKind": "seat",
+        "id": "seat_tng_nw1",
+        "buildingId": "tngOffice",
+        "seatGroup": "devNW",
+        "x": 1686,
+        "y": 850,
+        "yaw": 3.1416,
+        "dir": "up"
+      }
+    },
+    {
+      "name": "seat_tng_nw2_Cushion",
+      "mesh": 16,
+      "translation": [
+        0,
+        0.42,
+        0
+      ],
+      "scale": [
+        0.64,
+        0.12,
+        0.64
+      ]
+    },
+    {
+      "name": "seat_tng_nw2",
+      "translation": [
+        20.72,
+        0,
+        2
+      ],
+      "rotation": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "children": [
+        59
+      ],
+      "extensions": {
+        "OMI_seat": {
+          "back": [
+            0,
+            0.42,
+            -0.22
+          ],
+          "foot": [
+            0,
+            0,
+            0.28
+          ],
+          "knee": [
+            0,
+            0.42,
+            0.22
+          ],
+          "angle": 1.5708
+        }
+      },
+      "extras": {
+        "comgameKind": "seat",
+        "id": "seat_tng_nw2",
+        "buildingId": "tngOffice",
+        "seatGroup": "devNW",
+        "x": 1718,
+        "y": 850,
+        "yaw": 3.1416,
+        "dir": "up"
+      }
+    },
+    {
+      "name": "seat_tng_se1_Cushion",
+      "mesh": 16,
+      "translation": [
+        0,
+        0.42,
+        0
+      ],
+      "scale": [
+        0.64,
+        0.12,
+        0.64
+      ]
+    },
+    {
+      "name": "seat_tng_se1",
+      "translation": [
+        30.48,
+        0,
+        7.04
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "children": [
+        61
+      ],
+      "extensions": {
+        "OMI_seat": {
+          "back": [
+            0,
+            0.42,
+            -0.22
+          ],
+          "foot": [
+            0,
+            0,
+            0.28
+          ],
+          "knee": [
+            0,
+            0.42,
+            0.22
+          ],
+          "angle": 1.5708
+        }
+      },
+      "extras": {
+        "comgameKind": "seat",
+        "id": "seat_tng_se1",
+        "buildingId": "tngOffice",
+        "seatGroup": "devSE",
+        "x": 1962,
+        "y": 976,
+        "yaw": 0,
+        "dir": "down"
+      }
+    },
+    {
+      "name": "seat_tng_se2_Cushion",
+      "mesh": 16,
+      "translation": [
+        0,
+        0.42,
+        0
+      ],
+      "scale": [
+        0.64,
+        0.12,
+        0.64
+      ]
+    },
+    {
+      "name": "seat_tng_se2",
+      "translation": [
+        31.76,
+        0,
+        7.04
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "children": [
+        63
+      ],
+      "extensions": {
+        "OMI_seat": {
+          "back": [
+            0,
+            0.42,
+            -0.22
+          ],
+          "foot": [
+            0,
+            0,
+            0.28
+          ],
+          "knee": [
+            0,
+            0.42,
+            0.22
+          ],
+          "angle": 1.5708
+        }
+      },
+      "extras": {
+        "comgameKind": "seat",
+        "id": "seat_tng_se2",
+        "buildingId": "tngOffice",
+        "seatGroup": "devSE",
+        "x": 1994,
+        "y": 976,
+        "yaw": 0,
+        "dir": "down"
+      }
+    },
+    {
+      "name": "TNGOffice",
+      "children": [
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56,
+        58,
+        60,
+        62,
+        64
+      ],
+      "extras": {
+        "comgameKind": "enterableBuilding",
+        "id": "tngOffice",
+        "x": 1640,
+        "y": 780,
+        "w": 400,
+        "h": 280,
+        "wallT": 10,
+        "wallH": 64,
+        "roofH": 38,
+        "roof": "#355e58",
+        "roofTrim": "#23403c",
+        "wall": "#ebe4d8",
+        "floor": "#c9a97e",
+        "doorX": 1840,
+        "doors": [
+          {
+            "id": "west",
+            "side": "west",
+            "x": 1640,
+            "y1": 880,
+            "y2": 960,
+            "outsideX": 1612,
+            "outsideY": 920,
+            "insideX": 1674,
+            "insideY": 920
+          },
+          {
+            "id": "south",
+            "side": "south",
+            "y": 1060,
+            "x1": 1800,
+            "x2": 1880,
+            "outsideX": 1840,
+            "outsideY": 1088,
+            "insideX": 1840,
+            "insideY": 1026
+          }
+        ]
+      }
+    },
+    {
+      "name": "bridgeWest_Visual",
+      "mesh": 17,
+      "scale": [
+        4.4,
+        0.12,
+        3.92
+      ]
+    },
+    {
+      "name": "bridgeWest",
+      "translation": [
+        -14.2,
+        0.12,
+        19
+      ],
+      "children": [
+        66
+      ],
+      "extras": {
+        "comgameKind": "bridge",
+        "id": "bridgeWest",
+        "x1": 790,
+        "x2": 900,
+        "y1": 1226,
+        "y2": 1324
+      }
+    },
+    {
+      "name": "bridgeEast_Visual",
+      "mesh": 17,
+      "scale": [
+        4.4,
+        0.12,
+        3.92
+      ]
+    },
+    {
+      "name": "bridgeEast",
+      "translation": [
+        12.6,
+        0.12,
+        19
+      ],
+      "children": [
+        68
+      ],
+      "extras": {
+        "comgameKind": "bridge",
+        "id": "bridgeEast",
+        "x1": 1460,
+        "x2": 1570,
+        "y1": 1226,
+        "y2": 1324
+      }
+    },
+    {
+      "name": "PlazaStoneWell_Visual",
+      "mesh": 18,
+      "scale": [
+        2.72,
+        0.96,
+        2.72
+      ]
+    },
+    {
+      "name": "PlazaStoneWell",
+      "translation": [
+        0,
+        0.48,
+        -2.2
+      ],
+      "children": [
+        70
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 10
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "well",
+        "x": 1200,
+        "y": 745,
+        "r": 34,
+        "s": 1,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "SouthCampfire_Visual",
+      "mesh": 19,
+      "scale": [
+        2.08,
+        0.64,
+        2.08
+      ]
+    },
+    {
+      "name": "SouthCampfire",
+      "translation": [
+        0,
+        0.32,
+        25.4
+      ],
+      "children": [
+        72
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 11
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "campfire",
+        "x": 1200,
+        "y": 1435,
+        "r": 26,
+        "s": 1,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_1_Visual",
+      "mesh": 20,
+      "scale": [
+        1.76,
+        2.576,
+        1.76
+      ]
+    },
+    {
+      "name": "Tree_1",
+      "translation": [
+        -42,
+        1.288,
+        -26.8
+      ],
+      "children": [
+        74
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 12
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 150,
+        "y": 130,
+        "r": 22,
+        "s": 1.15,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_2_Visual",
+      "mesh": 20,
+      "scale": [
+        1.6,
+        2.24,
+        1.6
+      ]
+    },
+    {
+      "name": "Tree_2",
+      "translation": [
+        -36.8,
+        1.12,
+        -27.6
+      ],
+      "children": [
+        76
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 13
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 280,
+        "y": 110,
+        "r": 20,
+        "s": 1,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_3_Visual",
+      "mesh": 20,
+      "scale": [
+        1.76,
+        2.464,
+        1.76
+      ]
+    },
+    {
+      "name": "Tree_3",
+      "translation": [
+        -30.8,
+        1.232,
+        -26.6
+      ],
+      "children": [
+        78
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 14
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 430,
+        "y": 135,
+        "r": 22,
+        "s": 1.1,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_4_Visual",
+      "mesh": 20,
+      "scale": [
+        1.6,
+        2.24,
+        1.6
+      ]
+    },
+    {
+      "name": "Tree_4",
+      "translation": [
+        -23.6,
+        1.12,
+        -27.4
+      ],
+      "children": [
+        80
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 13
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 610,
+        "y": 115,
+        "r": 20,
+        "s": 1,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_5_Visual",
+      "mesh": 20,
+      "scale": [
+        1.76,
+        2.576,
+        1.76
+      ]
+    },
+    {
+      "name": "Tree_5",
+      "translation": [
+        -16.4,
+        1.288,
+        -26.8
+      ],
+      "children": [
+        82
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 12
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 790,
+        "y": 130,
+        "r": 22,
+        "s": 1.15,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_6_Visual",
+      "mesh": 20,
+      "scale": [
+        1.44,
+        2.128,
+        1.44
+      ]
+    },
+    {
+      "name": "Tree_6",
+      "translation": [
+        -11.2,
+        1.064,
+        -27.4
+      ],
+      "children": [
+        84
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 15
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 920,
+        "y": 115,
+        "r": 18,
+        "s": 0.95,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_7_Visual",
+      "mesh": 20,
+      "scale": [
+        1.6,
+        2.24,
+        1.6
+      ]
+    },
+    {
+      "name": "Tree_7",
+      "translation": [
+        11.6,
+        1.12,
+        -27.4
+      ],
+      "children": [
+        86
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 13
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 1490,
+        "y": 115,
+        "r": 20,
+        "s": 1,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_8_Visual",
+      "mesh": 20,
+      "scale": [
+        1.76,
+        2.464,
+        1.76
+      ]
+    },
+    {
+      "name": "Tree_8",
+      "translation": [
+        18,
+        1.232,
+        -26.8
+      ],
+      "children": [
+        88
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 14
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 1650,
+        "y": 130,
+        "r": 22,
+        "s": 1.1,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_9_Visual",
+      "mesh": 20,
+      "scale": [
+        1.6,
+        2.352,
+        1.6
+      ]
+    },
+    {
+      "name": "Tree_9",
+      "translation": [
+        25.2,
+        1.176,
+        -27.6
+      ],
+      "children": [
+        90
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 16
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 1830,
+        "y": 110,
+        "r": 20,
+        "s": 1.05,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_10_Visual",
+      "mesh": 20,
+      "scale": [
+        1.76,
+        2.576,
+        1.76
+      ]
+    },
+    {
+      "name": "Tree_10",
+      "translation": [
+        33.6,
+        1.288,
+        -27
+      ],
+      "children": [
+        92
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 12
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 2040,
+        "y": 125,
+        "r": 22,
+        "s": 1.15,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_11_Visual",
+      "mesh": 20,
+      "scale": [
+        1.76,
+        2.464,
+        1.76
+      ]
+    },
+    {
+      "name": "Tree_11",
+      "translation": [
+        40.8,
+        1.232,
+        -26.4
+      ],
+      "children": [
+        94
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 14
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 2220,
+        "y": 140,
+        "r": 22,
+        "s": 1.1,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_12_Visual",
+      "mesh": 20,
+      "scale": [
+        1.76,
+        2.464,
+        1.76
+      ]
+    },
+    {
+      "name": "Tree_12",
+      "translation": [
+        -43.2,
+        1.232,
+        -18.4
+      ],
+      "children": [
+        96
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 14
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 120,
+        "y": 340,
+        "r": 22,
+        "s": 1.1,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_13_Visual",
+      "mesh": 20,
+      "scale": [
+        1.52,
+        2.128,
+        1.52
+      ]
+    },
+    {
+      "name": "Tree_13",
+      "translation": [
+        -39.6,
+        1.064,
+        -13.2
+      ],
+      "children": [
+        98
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 17
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 210,
+        "y": 470,
+        "r": 19,
+        "s": 0.95,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_14_Visual",
+      "mesh": 20,
+      "scale": [
+        1.76,
+        2.576,
+        1.76
+      ]
+    },
+    {
+      "name": "Tree_14",
+      "translation": [
+        -42.8,
+        1.288,
+        -5.6
+      ],
+      "children": [
+        100
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 12
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 130,
+        "y": 660,
+        "r": 22,
+        "s": 1.15,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_15_Visual",
+      "mesh": 20,
+      "scale": [
+        1.6,
+        2.24,
+        1.6
+      ]
+    },
+    {
+      "name": "Tree_15",
+      "translation": [
+        -38.8,
+        1.12,
+        0
+      ],
+      "children": [
+        102
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 13
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 230,
+        "y": 800,
+        "r": 20,
+        "s": 1,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_16_Visual",
+      "mesh": 20,
+      "scale": [
+        1.76,
+        2.464,
+        1.76
+      ]
+    },
+    {
+      "name": "Tree_16",
+      "translation": [
+        -42.6,
+        1.232,
+        8.4
+      ],
+      "children": [
+        104
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 14
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 135,
+        "y": 1010,
+        "r": 22,
+        "s": 1.1,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_17_Visual",
+      "mesh": 20,
+      "scale": [
+        1.52,
+        2.128,
+        1.52
+      ]
+    },
+    {
+      "name": "Tree_17",
+      "translation": [
+        -38.6,
+        1.064,
+        13.8
+      ],
+      "children": [
+        106
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 17
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 235,
+        "y": 1145,
+        "r": 19,
+        "s": 0.95,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_18_Visual",
+      "mesh": 20,
+      "scale": [
+        1.36,
+        2.016,
+        1.36
+      ]
+    },
+    {
+      "name": "Tree_18",
+      "translation": [
+        16.8,
+        1.008,
+        -21.2
+      ],
+      "children": [
+        108
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 18
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 1620,
+        "y": 270,
+        "r": 17,
+        "s": 0.9,
+        "fruit": true,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_19_Visual",
+      "mesh": 20,
+      "scale": [
+        1.36,
+        2.016,
+        1.36
+      ]
+    },
+    {
+      "name": "Tree_19",
+      "translation": [
+        21.2,
+        1.008,
+        -21.2
+      ],
+      "children": [
+        110
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 18
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 1730,
+        "y": 270,
+        "r": 17,
+        "s": 0.9,
+        "fruit": true,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_20_Visual",
+      "mesh": 20,
+      "scale": [
+        1.36,
+        2.016,
+        1.36
+      ]
+    },
+    {
+      "name": "Tree_20",
+      "translation": [
+        25.6,
+        1.008,
+        -21.2
+      ],
+      "children": [
+        112
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 18
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 1840,
+        "y": 270,
+        "r": 17,
+        "s": 0.9,
+        "fruit": true,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_21_Visual",
+      "mesh": 21,
+      "scale": [
+        1.28,
+        1.9712,
+        1.28
+      ]
+    },
+    {
+      "name": "Tree_21",
+      "translation": [
+        21.4,
+        0.9856,
+        12.32
+      ],
+      "children": [
+        114
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 19
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 1735,
+        "y": 1108,
+        "r": 16,
+        "s": 0.88,
+        "fruit": true,
+        "mikan": true
+      }
+    },
+    {
+      "name": "Tree_22_Visual",
+      "mesh": 21,
+      "scale": [
+        1.28,
+        1.9712,
+        1.28
+      ]
+    },
+    {
+      "name": "Tree_22",
+      "translation": [
+        29.8,
+        0.9856,
+        12.32
+      ],
+      "children": [
+        116
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 19
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 1945,
+        "y": 1108,
+        "r": 16,
+        "s": 0.88,
+        "fruit": true,
+        "mikan": true
+      }
+    },
+    {
+      "name": "Tree_23_Visual",
+      "mesh": 20,
+      "scale": [
+        1.76,
+        2.464,
+        1.76
+      ]
+    },
+    {
+      "name": "Tree_23",
+      "translation": [
+        39.2,
+        1.232,
+        -17.6
+      ],
+      "children": [
+        118
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 14
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 2180,
+        "y": 360,
+        "r": 22,
+        "s": 1.1,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_24_Visual",
+      "mesh": 20,
+      "scale": [
+        1.6,
+        2.24,
+        1.6
+      ]
+    },
+    {
+      "name": "Tree_24",
+      "translation": [
+        42.8,
+        1.12,
+        -10.4
+      ],
+      "children": [
+        120
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 13
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 2270,
+        "y": 540,
+        "r": 20,
+        "s": 1,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_25_Visual",
+      "mesh": 20,
+      "scale": [
+        1.76,
+        2.576,
+        1.76
+      ]
+    },
+    {
+      "name": "Tree_25",
+      "translation": [
+        39.6,
+        1.288,
+        -1.6
+      ],
+      "children": [
+        122
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 12
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 2190,
+        "y": 760,
+        "r": 22,
+        "s": 1.15,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_26_Visual",
+      "mesh": 20,
+      "scale": [
+        1.68,
+        2.352,
+        1.68
+      ]
+    },
+    {
+      "name": "Tree_26",
+      "translation": [
+        42.6,
+        1.176,
+        7.2
+      ],
+      "children": [
+        124
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 20
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 2265,
+        "y": 980,
+        "r": 21,
+        "s": 1.05,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_27_Visual",
+      "mesh": 20,
+      "scale": [
+        1.52,
+        2.128,
+        1.52
+      ]
+    },
+    {
+      "name": "Tree_27",
+      "translation": [
+        38,
+        1.064,
+        13.6
+      ],
+      "children": [
+        126
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 17
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 2150,
+        "y": 1140,
+        "r": 19,
+        "s": 0.95,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_28_Visual",
+      "mesh": 20,
+      "scale": [
+        1.44,
+        2.128,
+        1.44
+      ]
+    },
+    {
+      "name": "Tree_28",
+      "translation": [
+        -13.6,
+        1.064,
+        -13.6
+      ],
+      "children": [
+        128
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 15
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 860,
+        "y": 460,
+        "r": 18,
+        "s": 0.95,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_29_Visual",
+      "mesh": 20,
+      "scale": [
+        1.44,
+        2.128,
+        1.44
+      ]
+    },
+    {
+      "name": "Tree_29",
+      "translation": [
+        -13.8,
+        1.064,
+        7.8
+      ],
+      "children": [
+        130
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 15
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 855,
+        "y": 995,
+        "r": 18,
+        "s": 0.95,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_30_Visual",
+      "mesh": 20,
+      "scale": [
+        1.44,
+        2.128,
+        1.44
+      ]
+    },
+    {
+      "name": "Tree_30",
+      "translation": [
+        12.4,
+        1.064,
+        -3.2
+      ],
+      "children": [
+        132
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 15
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 1510,
+        "y": 720,
+        "r": 18,
+        "s": 0.95,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_31_Visual",
+      "mesh": 20,
+      "scale": [
+        1.52,
+        2.24,
+        1.52
+      ]
+    },
+    {
+      "name": "Tree_31",
+      "translation": [
+        13.2,
+        1.12,
+        8.8
+      ],
+      "children": [
+        134
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 21
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 1530,
+        "y": 1020,
+        "r": 19,
+        "s": 1,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_32_Visual",
+      "mesh": 20,
+      "scale": [
+        1.76,
+        2.464,
+        1.76
+      ]
+    },
+    {
+      "name": "Tree_32",
+      "translation": [
+        -40.4,
+        1.232,
+        25.6
+      ],
+      "children": [
+        136
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 14
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 190,
+        "y": 1440,
+        "r": 22,
+        "s": 1.1,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_33_Visual",
+      "mesh": 20,
+      "scale": [
+        1.6,
+        2.24,
+        1.6
+      ]
+    },
+    {
+      "name": "Tree_33",
+      "translation": [
+        -29.6,
+        1.12,
+        27.2
+      ],
+      "children": [
+        138
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 13
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 460,
+        "y": 1480,
+        "r": 20,
+        "s": 1,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_34_Visual",
+      "mesh": 20,
+      "scale": [
+        1.52,
+        2.128,
+        1.52
+      ]
+    },
+    {
+      "name": "Tree_34",
+      "translation": [
+        -18.4,
+        1.064,
+        26.8
+      ],
+      "children": [
+        140
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 17
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 740,
+        "y": 1470,
+        "r": 19,
+        "s": 0.95,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_35_Visual",
+      "mesh": 20,
+      "scale": [
+        1.6,
+        2.24,
+        1.6
+      ]
+    },
+    {
+      "name": "Tree_35",
+      "translation": [
+        19.6,
+        1.12,
+        26.6
+      ],
+      "children": [
+        142
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 13
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 1690,
+        "y": 1465,
+        "r": 20,
+        "s": 1,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_36_Visual",
+      "mesh": 20,
+      "scale": [
+        1.76,
+        2.464,
+        1.76
+      ]
+    },
+    {
+      "name": "Tree_36",
+      "translation": [
+        31.2,
+        1.232,
+        27.2
+      ],
+      "children": [
+        144
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 14
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 1980,
+        "y": 1480,
+        "r": 22,
+        "s": 1.1,
+        "fruit": false,
+        "mikan": false
+      }
+    },
+    {
+      "name": "Tree_37_Visual",
+      "mesh": 20,
+      "scale": [
+        1.68,
+        2.352,
+        1.68
+      ]
+    },
+    {
+      "name": "Tree_37",
+      "translation": [
+        41.2,
+        1.176,
+        25.2
+      ],
+      "children": [
+        146
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 20
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "circleCollider",
+        "kind": "tree",
+        "x": 2230,
+        "y": 1430,
+        "r": 21,
+        "s": 1.05,
+        "fruit": false,
+        "mikan": false
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "VillageGround_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "AssemblyHall_Roof_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "name": "AssemblyHall_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 2
+        }
+      ]
+    },
+    {
+      "name": "CoopBakery_Roof_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 3
+        }
+      ]
+    },
+    {
+      "name": "CoopBakery_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 4
+        }
+      ]
+    },
+    {
+      "name": "ToolWorkshop_Roof_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 5
+        }
+      ]
+    },
+    {
+      "name": "ToolWorkshop_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 6
+        }
+      ]
+    },
+    {
+      "name": "GardenShed_Roof_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 7
+        }
+      ]
+    },
+    {
+      "name": "GardenShed_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 8
+        }
+      ]
+    },
+    {
+      "name": "TNGOffice_Floor_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 9
+        }
+      ]
+    },
+    {
+      "name": "TNGOffice_Roof_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 10
+        }
+      ]
+    },
+    {
+      "name": "TNGOffice_WallNorth_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 11
+        }
+      ]
+    },
+    {
+      "name": "TNGOffice_MeetingTable_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 12
+        }
+      ]
+    },
+    {
+      "name": "TNGOffice_DevDeskNW_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 13
+        }
+      ]
+    },
+    {
+      "name": "TNGOffice_PresentationScreen_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 14
+        }
+      ]
+    },
+    {
+      "name": "TNGOffice_PublicNoticeBoard_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 15
+        }
+      ]
+    },
+    {
+      "name": "TNGOfficeChair_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 16
+        }
+      ]
+    },
+    {
+      "name": "bridgeWest_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 17
+        }
+      ]
+    },
+    {
+      "name": "well_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 3,
+            "NORMAL": 4
+          },
+          "indices": 5,
+          "material": 18
+        }
+      ]
+    },
+    {
+      "name": "campfire_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 3,
+            "NORMAL": 4
+          },
+          "indices": 5,
+          "material": 19
+        }
+      ]
+    },
+    {
+      "name": "tree_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 3,
+            "NORMAL": 4
+          },
+          "indices": 5,
+          "material": 20
+        }
+      ]
+    },
+    {
+      "name": "tree_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 3,
+            "NORMAL": 4
+          },
+          "indices": 5,
+          "material": 21
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "MeadowGrass",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0762,
+          0.2016,
+          0.0648,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "AssemblyHall_RoofMat",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.1529,
+          0.0723,
+          0.0467,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "AssemblyHall_WallMat",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.7379,
+          0.6514,
+          0.5457,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "CoopBakery_RoofMat",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.4621,
+          0.0844,
+          0.0409,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "CoopBakery_WallMat",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8228,
+          0.7084,
+          0.5776,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "ToolWorkshop_RoofMat",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0561,
+          0.1221,
+          0.1878,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "ToolWorkshop_WallMat",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6867,
+          0.6445,
+          0.5583,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "GardenShed_RoofMat",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.1144,
+          0.1946,
+          0.0704,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "GardenShed_WallMat",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.7379,
+          0.6654,
+          0.5583,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "TNGOfficeFloor",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5841,
+          0.3968,
+          0.2086,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "TNGOfficeRoof",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0356,
+          0.1119,
+          0.0976,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "TNGOfficeWall",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8308,
+          0.7758,
+          0.6867,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "TNGOfficeWood",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.2623,
+          0.1221,
+          0.0467,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "TNGOfficeWood",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.2016,
+          0.0931,
+          0.0395,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "TNGOfficeScreen",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.011,
+          0.0212,
+          0.016,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "TNGNoticeBoard",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8632,
+          0.7835,
+          0.624,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "TNGOfficeChair",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0262,
+          0.1441,
+          0.0782,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "BridgeWood",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.2747,
+          0.1301,
+          0.0545,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "Mat_well",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.2016,
+          0.2346,
+          0.2623,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "Mat_campfire",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8714,
+          0.1529,
+          0.0296,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "Mat_tree",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0262,
+          0.1119,
+          0.0343,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "Mat_tree",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0395,
+          0.1812,
+          0.0467,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3",
+      "min": [
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "max": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5123,
+      "count": 36,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 70,
+      "type": "VEC3",
+      "min": [
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "max": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 70,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 192,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 288,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 288,
+      "byteLength": 288,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 576,
+      "byteLength": 72,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 648,
+      "byteLength": 840,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1488,
+      "byteLength": 840,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2328,
+      "byteLength": 384,
+      "target": 34963
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 2712,
+      "uri": "data:application/octet-stream;base64,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"
+    }
+  ]
+}

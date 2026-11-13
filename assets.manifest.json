@@ -1,0 +1,61 @@
+{
+  "version": "v0.1.0",
+  "repository": "https://github.com/tng-coop/comgame-open-assets",
+  "cdnBaseUrl": "https://cdn.jsdelivr.net/gh/tng-coop/comgame-open-assets@v0.1.0",
+  "assets": [
+    {
+      "id": "world",
+      "filename": "world.glb",
+      "localPath": "./assets/world.glb",
+      "urlPath": "/comgame/assets/world.glb",
+      "cdnUrl": "https://cdn.jsdelivr.net/gh/tng-coop/comgame-open-assets@v0.1.0/world.glb",
+      "format": "model/gltf-binary",
+      "license": "CC0-1.0",
+      "byteLength": 36320,
+      "sha256": "e482d8e8f3ddec482239f32bba14fc7e046d6a7240f8dc33fad922b28b82e7e7",
+      "sri": "sha256-5ILY6PPd7EgiOfMruhT8fgRtanJA+Nwz+tkisouC5+c=",
+      "standards": [
+        "ISO/IEC 12113 (glTF 2.0 Binary)",
+        "OMI_physics_shape",
+        "OMI_physics_body",
+        "OMI_spawn_point",
+        "OMI_seat",
+        "OMI_link"
+      ]
+    },
+    {
+      "id": "panasonic-xm1",
+      "filename": "panasonic-xm1.glb",
+      "localPath": "./assets/panasonic-xm1.glb",
+      "urlPath": "/comgame/assets/panasonic-xm1.glb",
+      "cdnUrl": "https://cdn.jsdelivr.net/gh/tng-coop/comgame-open-assets@v0.1.0/panasonic-xm1.glb",
+      "format": "model/gltf-binary",
+      "license": "CC0-1.0",
+      "byteLength": 17508,
+      "sha256": "2c72c45df9048e2613e0836dcd0d7bdc7b64c684795ca6ea32ff4ab9f086422a",
+      "sri": "sha256-LHLEXfkEjiYT4INtzQ173HtkxoR5XKbqMv9KufCGQio=",
+      "standards": [
+        "ISO/IEC 12113 (glTF 2.0 Binary)",
+        "OMI_physics_shape",
+        "OMI_physics_body",
+        "OMI_seat"
+      ]
+    },
+    {
+      "id": "yasu",
+      "filename": "yasu.vrm.glb",
+      "localPath": "./assets/yasu.vrm.glb",
+      "urlPath": "/comgame/assets/yasu.vrm.glb",
+      "cdnUrl": "https://cdn.jsdelivr.net/gh/tng-coop/comgame-open-assets@v0.1.0/yasu.vrm.glb",
+      "format": "model/gltf-binary",
+      "license": "CC-BY-4.0",
+      "byteLength": 21960,
+      "sha256": "6d0a4d99094fada5af6bb3eba45c6ca8442d6083408b97a33106278edd7c3ffc",
+      "sri": "sha256-bQpNmQlPraWva7PrpFxsqEQtYINAi5ejMQYnjt18P/w=",
+      "standards": [
+        "ISO/IEC 12113 (glTF 2.0 Binary)",
+        "VRMC_vrm-1.0"
+      ]
+    }
+  ]
+}
