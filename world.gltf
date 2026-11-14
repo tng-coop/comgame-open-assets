@@ -115,6 +115,56 @@
           }
         },
         {
+          "type": "box",
+          "box": {
+            "size": [
+              9.6,
+              2.48,
+              0.4
+            ]
+          }
+        },
+        {
+          "type": "box",
+          "box": {
+            "size": [
+              0.4,
+              2.48,
+              8
+            ]
+          }
+        },
+        {
+          "type": "box",
+          "box": {
+            "size": [
+              0.4,
+              2.48,
+              2.6
+            ]
+          }
+        },
+        {
+          "type": "box",
+          "box": {
+            "size": [
+              1.2,
+              1.84,
+              0.8
+            ]
+          }
+        },
+        {
+          "type": "box",
+          "box": {
+            "size": [
+              1.92,
+              0.8,
+              1.6
+            ]
+          }
+        },
+        {
           "type": "cylinder",
           "cylinder": {
             "radius": 1.36,
@@ -213,47 +263,48 @@
         14,
         18,
         65,
-        67,
-        69,
-        71,
-        73,
-        75,
-        77,
-        79,
-        81,
-        83,
-        85,
-        87,
-        89,
-        91,
-        93,
-        95,
-        97,
-        99,
-        101,
-        103,
-        105,
-        107,
-        109,
-        111,
-        113,
-        115,
-        117,
-        119,
-        121,
-        123,
-        125,
-        127,
-        129,
-        131,
-        133,
-        135,
-        137,
-        139,
-        141,
-        143,
-        145,
-        147
+        98,
+        100,
+        102,
+        104,
+        106,
+        108,
+        110,
+        112,
+        114,
+        116,
+        118,
+        120,
+        122,
+        124,
+        126,
+        128,
+        130,
+        132,
+        134,
+        136,
+        138,
+        140,
+        142,
+        144,
+        146,
+        148,
+        150,
+        152,
+        154,
+        156,
+        158,
+        160,
+        162,
+        164,
+        166,
+        168,
+        170,
+        172,
+        174,
+        176,
+        178,
+        180
       ],
       "extras": {
         "worldWidth": 2400,
@@ -1739,8 +1790,789 @@
       }
     },
     {
-      "name": "bridgeWest_Visual",
+      "name": "TrafficGameCenter_Floor_Visual",
       "mesh": 17,
+      "scale": [
+        9.44,
+        0.032,
+        8.64
+      ]
+    },
+    {
+      "name": "TrafficGameCenter_Floor",
+      "translation": [
+        -32,
+        0.016,
+        -1.2
+      ],
+      "children": [
+        66
+      ]
+    },
+    {
+      "name": "TrafficGameCenter_Roof_Visual",
+      "mesh": 18,
+      "scale": [
+        10.24,
+        1.008,
+        9.44
+      ]
+    },
+    {
+      "name": "TrafficGameCenter_Roof",
+      "translation": [
+        -32,
+        2.984,
+        -1.2
+      ],
+      "children": [
+        68
+      ],
+      "extras": {
+        "comgameRole": "cutawayRoof"
+      }
+    },
+    {
+      "name": "TrafficGameCenter_WallNorth_Visual",
+      "mesh": 19,
+      "scale": [
+        9.6,
+        2.48,
+        0.4
+      ]
+    },
+    {
+      "name": "TrafficGameCenter_WallNorth",
+      "translation": [
+        -32,
+        1.24,
+        -5.4
+      ],
+      "children": [
+        70
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 10
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "wallCollider",
+        "buildingId": "trafficCenter",
+        "wallId": "north",
+        "x": 280,
+        "y": 660,
+        "w": 240,
+        "h": 10
+      }
+    },
+    {
+      "name": "TrafficGameCenter_WallSouth_Visual",
+      "mesh": 19,
+      "scale": [
+        9.6,
+        2.48,
+        0.4
+      ]
+    },
+    {
+      "name": "TrafficGameCenter_WallSouth",
+      "translation": [
+        -32,
+        1.24,
+        3
+      ],
+      "children": [
+        72
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 10
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "wallCollider",
+        "buildingId": "trafficCenter",
+        "wallId": "south",
+        "x": 280,
+        "y": 870,
+        "w": 240,
+        "h": 10
+      }
+    },
+    {
+      "name": "TrafficGameCenter_WallWest_Visual",
+      "mesh": 19,
+      "scale": [
+        0.4,
+        2.48,
+        8
+      ]
+    },
+    {
+      "name": "TrafficGameCenter_WallWest",
+      "translation": [
+        -36.6,
+        1.24,
+        -1.2
+      ],
+      "children": [
+        74
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 11
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "wallCollider",
+        "buildingId": "trafficCenter",
+        "wallId": "west",
+        "x": 280,
+        "y": 670,
+        "w": 10,
+        "h": 200
+      }
+    },
+    {
+      "name": "TrafficGameCenter_WallEastNorth_Visual",
+      "mesh": 19,
+      "scale": [
+        0.4,
+        2.48,
+        2.6
+      ]
+    },
+    {
+      "name": "TrafficGameCenter_WallEastNorth",
+      "translation": [
+        -27.4,
+        1.24,
+        -3.9
+      ],
+      "children": [
+        76
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 12
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "wallCollider",
+        "buildingId": "trafficCenter",
+        "wallId": "eastNorth",
+        "x": 510,
+        "y": 670,
+        "w": 10,
+        "h": 65
+      }
+    },
+    {
+      "name": "TrafficGameCenter_WallEastSouth_Visual",
+      "mesh": 19,
+      "scale": [
+        0.4,
+        2.48,
+        2.6
+      ]
+    },
+    {
+      "name": "TrafficGameCenter_WallEastSouth",
+      "translation": [
+        -27.4,
+        1.24,
+        1.5
+      ],
+      "children": [
+        78
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 12
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "wallCollider",
+        "buildingId": "trafficCenter",
+        "wallId": "eastSouth",
+        "x": 510,
+        "y": 805,
+        "w": 10,
+        "h": 65
+      }
+    },
+    {
+      "name": "TrafficGameCenter_Cabinet1_Visual",
+      "mesh": 20,
+      "scale": [
+        1.2,
+        1.84,
+        0.8
+      ]
+    },
+    {
+      "name": "TrafficGameCenter_Cabinet1",
+      "translation": [
+        -34.36,
+        0.92,
+        -4.48
+      ],
+      "children": [
+        80
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 13
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "furnitureCollider",
+        "buildingId": "trafficCenter",
+        "id": "arcadeCab1",
+        "furnitureType": "arcadeCabinet",
+        "monitorFacing": "south",
+        "vx": 324,
+        "vy": 676,
+        "vw": 34,
+        "vh": 24,
+        "x": 326,
+        "y": 678,
+        "w": 30,
+        "h": 20,
+        "elevH": 46,
+        "standX": 341,
+        "standY": 714,
+        "seatId": "seat_arcade_1"
+      }
+    },
+    {
+      "name": "TrafficGameCenter_Cabinet2_Visual",
+      "mesh": 20,
+      "scale": [
+        1.2,
+        1.84,
+        0.8
+      ]
+    },
+    {
+      "name": "TrafficGameCenter_Cabinet2",
+      "translation": [
+        -31.24,
+        0.92,
+        -4.48
+      ],
+      "children": [
+        82
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 13
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "furnitureCollider",
+        "buildingId": "trafficCenter",
+        "id": "arcadeCab2",
+        "furnitureType": "arcadeCabinet",
+        "monitorFacing": "south",
+        "vx": 402,
+        "vy": 676,
+        "vw": 34,
+        "vh": 24,
+        "x": 404,
+        "y": 678,
+        "w": 30,
+        "h": 20,
+        "elevH": 46,
+        "standX": 419,
+        "standY": 714,
+        "seatId": "seat_arcade_2"
+      }
+    },
+    {
+      "name": "TrafficGameCenter_Cabinet3_Visual",
+      "mesh": 20,
+      "scale": [
+        1.2,
+        1.84,
+        0.8
+      ]
+    },
+    {
+      "name": "TrafficGameCenter_Cabinet3",
+      "translation": [
+        -34.36,
+        0.92,
+        2.08
+      ],
+      "children": [
+        84
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 13
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "furnitureCollider",
+        "buildingId": "trafficCenter",
+        "id": "arcadeCab3",
+        "furnitureType": "arcadeCabinet",
+        "monitorFacing": "north",
+        "vx": 324,
+        "vy": 840,
+        "vw": 34,
+        "vh": 24,
+        "x": 326,
+        "y": 842,
+        "w": 30,
+        "h": 20,
+        "elevH": 46,
+        "standX": 341,
+        "standY": 826,
+        "seatId": "seat_arcade_3"
+      }
+    },
+    {
+      "name": "TrafficGameCenter_Cabinet4_Visual",
+      "mesh": 20,
+      "scale": [
+        1.2,
+        1.84,
+        0.8
+      ]
+    },
+    {
+      "name": "TrafficGameCenter_Cabinet4",
+      "translation": [
+        -31.24,
+        0.92,
+        2.08
+      ],
+      "children": [
+        86
+      ],
+      "extensions": {
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 13
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "furnitureCollider",
+        "buildingId": "trafficCenter",
+        "id": "arcadeCab4",
+        "furnitureType": "arcadeCabinet",
+        "monitorFacing": "north",
+        "vx": 402,
+        "vy": 840,
+        "vw": 34,
+        "vh": 24,
+        "x": 404,
+        "y": 842,
+        "w": 30,
+        "h": 20,
+        "elevH": 46,
+        "standX": 419,
+        "standY": 826,
+        "seatId": "seat_arcade_4"
+      }
+    },
+    {
+      "name": "TrafficGameCenter_CityDioramaTable_Visual",
+      "mesh": 21,
+      "scale": [
+        1.92,
+        0.8,
+        1.6
+      ]
+    },
+    {
+      "name": "TrafficGameCenter_CityDioramaTable",
+      "translation": [
+        -35.04,
+        0.4,
+        -1.2
+      ],
+      "children": [
+        88
+      ],
+      "extensions": {
+        "OMI_link": {
+          "uri": "./city-trial/index.html",
+          "title": "Traffic Game Center — R / C / I Flow Trial"
+        },
+        "OMI_physics_body": {
+          "motion": {
+            "type": "static"
+          },
+          "collider": {
+            "shape": 14
+          }
+        }
+      },
+      "extras": {
+        "comgameKind": "furnitureCollider",
+        "buildingId": "trafficCenter",
+        "id": "arcadeCityTable",
+        "furnitureType": "arcadeTable",
+        "monitorFacing": "east",
+        "vx": 298,
+        "vy": 748,
+        "vw": 52,
+        "vh": 44,
+        "x": 300,
+        "y": 750,
+        "w": 48,
+        "h": 40,
+        "elevH": 20,
+        "standX": 372,
+        "standY": 770,
+        "seatId": ""
+      }
+    },
+    {
+      "name": "seat_arcade_1_Cushion",
+      "mesh": 22,
+      "translation": [
+        0,
+        0.42,
+        0
+      ],
+      "scale": [
+        0.56,
+        0.12,
+        0.56
+      ]
+    },
+    {
+      "name": "seat_arcade_1",
+      "translation": [
+        -34.36,
+        0,
+        -3.44
+      ],
+      "rotation": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "children": [
+        90
+      ],
+      "extensions": {
+        "OMI_seat": {
+          "back": [
+            0,
+            0.42,
+            -0.18
+          ],
+          "foot": [
+            0,
+            0,
+            0.26
+          ],
+          "knee": [
+            0,
+            0.42,
+            0.2
+          ],
+          "angle": 1.5708
+        }
+      },
+      "extras": {
+        "comgameKind": "seat",
+        "id": "seat_arcade_1",
+        "buildingId": "trafficCenter",
+        "seatGroup": "arcadeNorth",
+        "x": 341,
+        "y": 714,
+        "yaw": 3.1416,
+        "dir": "up"
+      }
+    },
+    {
+      "name": "seat_arcade_2_Cushion",
+      "mesh": 22,
+      "translation": [
+        0,
+        0.42,
+        0
+      ],
+      "scale": [
+        0.56,
+        0.12,
+        0.56
+      ]
+    },
+    {
+      "name": "seat_arcade_2",
+      "translation": [
+        -31.24,
+        0,
+        -3.44
+      ],
+      "rotation": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "children": [
+        92
+      ],
+      "extensions": {
+        "OMI_seat": {
+          "back": [
+            0,
+            0.42,
+            -0.18
+          ],
+          "foot": [
+            0,
+            0,
+            0.26
+          ],
+          "knee": [
+            0,
+            0.42,
+            0.2
+          ],
+          "angle": 1.5708
+        }
+      },
+      "extras": {
+        "comgameKind": "seat",
+        "id": "seat_arcade_2",
+        "buildingId": "trafficCenter",
+        "seatGroup": "arcadeNorth",
+        "x": 419,
+        "y": 714,
+        "yaw": 3.1416,
+        "dir": "up"
+      }
+    },
+    {
+      "name": "seat_arcade_3_Cushion",
+      "mesh": 22,
+      "translation": [
+        0,
+        0.42,
+        0
+      ],
+      "scale": [
+        0.56,
+        0.12,
+        0.56
+      ]
+    },
+    {
+      "name": "seat_arcade_3",
+      "translation": [
+        -34.36,
+        0,
+        1.04
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "children": [
+        94
+      ],
+      "extensions": {
+        "OMI_seat": {
+          "back": [
+            0,
+            0.42,
+            -0.18
+          ],
+          "foot": [
+            0,
+            0,
+            0.26
+          ],
+          "knee": [
+            0,
+            0.42,
+            0.2
+          ],
+          "angle": 1.5708
+        }
+      },
+      "extras": {
+        "comgameKind": "seat",
+        "id": "seat_arcade_3",
+        "buildingId": "trafficCenter",
+        "seatGroup": "arcadeSouth",
+        "x": 341,
+        "y": 826,
+        "yaw": 0,
+        "dir": "down"
+      }
+    },
+    {
+      "name": "seat_arcade_4_Cushion",
+      "mesh": 22,
+      "translation": [
+        0,
+        0.42,
+        0
+      ],
+      "scale": [
+        0.56,
+        0.12,
+        0.56
+      ]
+    },
+    {
+      "name": "seat_arcade_4",
+      "translation": [
+        -31.24,
+        0,
+        1.04
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "children": [
+        96
+      ],
+      "extensions": {
+        "OMI_seat": {
+          "back": [
+            0,
+            0.42,
+            -0.18
+          ],
+          "foot": [
+            0,
+            0,
+            0.26
+          ],
+          "knee": [
+            0,
+            0.42,
+            0.2
+          ],
+          "angle": 1.5708
+        }
+      },
+      "extras": {
+        "comgameKind": "seat",
+        "id": "seat_arcade_4",
+        "buildingId": "trafficCenter",
+        "seatGroup": "arcadeSouth",
+        "x": 419,
+        "y": 826,
+        "yaw": 0,
+        "dir": "down"
+      }
+    },
+    {
+      "name": "TrafficGameCenter",
+      "children": [
+        67,
+        69,
+        71,
+        73,
+        75,
+        77,
+        79,
+        81,
+        83,
+        85,
+        87,
+        89,
+        91,
+        93,
+        95,
+        97
+      ],
+      "extras": {
+        "comgameKind": "enterableBuilding",
+        "id": "trafficCenter",
+        "x": 280,
+        "y": 660,
+        "w": 240,
+        "h": 220,
+        "wallT": 10,
+        "wallH": 62,
+        "roofH": 36,
+        "roof": "#2d4a6d",
+        "roofTrim": "#1d314a",
+        "wall": "#e4e8ec",
+        "floor": "#334155",
+        "doorX": 520,
+        "doors": [
+          {
+            "id": "east",
+            "side": "east",
+            "x": 520,
+            "y1": 735,
+            "y2": 805,
+            "outsideX": 552,
+            "outsideY": 770,
+            "insideX": 482,
+            "insideY": 770
+          }
+        ]
+      }
+    },
+    {
+      "name": "bridgeWest_Visual",
+      "mesh": 23,
       "scale": [
         4.4,
         0.12,
@@ -1755,7 +2587,7 @@
         19
       ],
       "children": [
-        66
+        99
       ],
       "extras": {
         "comgameKind": "bridge",
@@ -1768,7 +2600,7 @@
     },
     {
       "name": "bridgeEast_Visual",
-      "mesh": 17,
+      "mesh": 23,
       "scale": [
         4.4,
         0.12,
@@ -1783,7 +2615,7 @@
         19
       ],
       "children": [
-        68
+        101
       ],
       "extras": {
         "comgameKind": "bridge",
@@ -1796,7 +2628,7 @@
     },
     {
       "name": "PlazaStoneWell_Visual",
-      "mesh": 18,
+      "mesh": 24,
       "scale": [
         2.72,
         0.96,
@@ -1811,7 +2643,7 @@
         -2.2
       ],
       "children": [
-        70
+        103
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -1819,7 +2651,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 10
+            "shape": 15
           }
         }
       },
@@ -1836,7 +2668,7 @@
     },
     {
       "name": "SouthCampfire_Visual",
-      "mesh": 19,
+      "mesh": 25,
       "scale": [
         2.08,
         0.64,
@@ -1851,7 +2683,7 @@
         25.4
       ],
       "children": [
-        72
+        105
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -1859,7 +2691,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 11
+            "shape": 16
           }
         }
       },
@@ -1876,7 +2708,7 @@
     },
     {
       "name": "Tree_1_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.76,
         2.576,
@@ -1891,7 +2723,7 @@
         -26.8
       ],
       "children": [
-        74
+        107
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -1899,7 +2731,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 12
+            "shape": 17
           }
         }
       },
@@ -1916,7 +2748,7 @@
     },
     {
       "name": "Tree_2_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.6,
         2.24,
@@ -1931,7 +2763,7 @@
         -27.6
       ],
       "children": [
-        76
+        109
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -1939,7 +2771,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 13
+            "shape": 18
           }
         }
       },
@@ -1956,7 +2788,7 @@
     },
     {
       "name": "Tree_3_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.76,
         2.464,
@@ -1971,7 +2803,7 @@
         -26.6
       ],
       "children": [
-        78
+        111
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -1979,7 +2811,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 14
+            "shape": 19
           }
         }
       },
@@ -1996,7 +2828,7 @@
     },
     {
       "name": "Tree_4_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.6,
         2.24,
@@ -2011,7 +2843,7 @@
         -27.4
       ],
       "children": [
-        80
+        113
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2019,7 +2851,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 13
+            "shape": 18
           }
         }
       },
@@ -2036,7 +2868,7 @@
     },
     {
       "name": "Tree_5_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.76,
         2.576,
@@ -2051,7 +2883,7 @@
         -26.8
       ],
       "children": [
-        82
+        115
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2059,7 +2891,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 12
+            "shape": 17
           }
         }
       },
@@ -2076,7 +2908,7 @@
     },
     {
       "name": "Tree_6_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.44,
         2.128,
@@ -2091,7 +2923,7 @@
         -27.4
       ],
       "children": [
-        84
+        117
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2099,7 +2931,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 15
+            "shape": 20
           }
         }
       },
@@ -2116,7 +2948,7 @@
     },
     {
       "name": "Tree_7_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.6,
         2.24,
@@ -2131,7 +2963,7 @@
         -27.4
       ],
       "children": [
-        86
+        119
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2139,7 +2971,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 13
+            "shape": 18
           }
         }
       },
@@ -2156,7 +2988,7 @@
     },
     {
       "name": "Tree_8_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.76,
         2.464,
@@ -2171,7 +3003,7 @@
         -26.8
       ],
       "children": [
-        88
+        121
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2179,7 +3011,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 14
+            "shape": 19
           }
         }
       },
@@ -2196,7 +3028,7 @@
     },
     {
       "name": "Tree_9_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.6,
         2.352,
@@ -2211,7 +3043,7 @@
         -27.6
       ],
       "children": [
-        90
+        123
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2219,7 +3051,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 16
+            "shape": 21
           }
         }
       },
@@ -2236,7 +3068,7 @@
     },
     {
       "name": "Tree_10_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.76,
         2.576,
@@ -2251,7 +3083,7 @@
         -27
       ],
       "children": [
-        92
+        125
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2259,7 +3091,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 12
+            "shape": 17
           }
         }
       },
@@ -2276,7 +3108,7 @@
     },
     {
       "name": "Tree_11_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.76,
         2.464,
@@ -2291,7 +3123,7 @@
         -26.4
       ],
       "children": [
-        94
+        127
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2299,7 +3131,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 14
+            "shape": 19
           }
         }
       },
@@ -2316,7 +3148,7 @@
     },
     {
       "name": "Tree_12_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.76,
         2.464,
@@ -2331,7 +3163,7 @@
         -18.4
       ],
       "children": [
-        96
+        129
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2339,7 +3171,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 14
+            "shape": 19
           }
         }
       },
@@ -2356,7 +3188,7 @@
     },
     {
       "name": "Tree_13_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.52,
         2.128,
@@ -2371,7 +3203,7 @@
         -13.2
       ],
       "children": [
-        98
+        131
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2379,7 +3211,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 17
+            "shape": 22
           }
         }
       },
@@ -2396,7 +3228,7 @@
     },
     {
       "name": "Tree_14_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.76,
         2.576,
@@ -2411,7 +3243,7 @@
         -5.6
       ],
       "children": [
-        100
+        133
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2419,7 +3251,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 12
+            "shape": 17
           }
         }
       },
@@ -2436,7 +3268,7 @@
     },
     {
       "name": "Tree_15_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.6,
         2.24,
@@ -2451,7 +3283,7 @@
         0
       ],
       "children": [
-        102
+        135
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2459,7 +3291,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 13
+            "shape": 18
           }
         }
       },
@@ -2476,7 +3308,7 @@
     },
     {
       "name": "Tree_16_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.76,
         2.464,
@@ -2491,7 +3323,7 @@
         8.4
       ],
       "children": [
-        104
+        137
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2499,7 +3331,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 14
+            "shape": 19
           }
         }
       },
@@ -2516,7 +3348,7 @@
     },
     {
       "name": "Tree_17_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.52,
         2.128,
@@ -2531,7 +3363,7 @@
         13.8
       ],
       "children": [
-        106
+        139
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2539,7 +3371,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 17
+            "shape": 22
           }
         }
       },
@@ -2556,7 +3388,7 @@
     },
     {
       "name": "Tree_18_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.36,
         2.016,
@@ -2571,7 +3403,7 @@
         -21.2
       ],
       "children": [
-        108
+        141
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2579,7 +3411,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 18
+            "shape": 23
           }
         }
       },
@@ -2596,7 +3428,7 @@
     },
     {
       "name": "Tree_19_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.36,
         2.016,
@@ -2611,7 +3443,7 @@
         -21.2
       ],
       "children": [
-        110
+        143
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2619,7 +3451,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 18
+            "shape": 23
           }
         }
       },
@@ -2636,7 +3468,7 @@
     },
     {
       "name": "Tree_20_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.36,
         2.016,
@@ -2651,7 +3483,7 @@
         -21.2
       ],
       "children": [
-        112
+        145
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2659,7 +3491,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 18
+            "shape": 23
           }
         }
       },
@@ -2676,7 +3508,7 @@
     },
     {
       "name": "Tree_21_Visual",
-      "mesh": 21,
+      "mesh": 27,
       "scale": [
         1.28,
         1.9712,
@@ -2691,7 +3523,7 @@
         12.32
       ],
       "children": [
-        114
+        147
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2699,7 +3531,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 19
+            "shape": 24
           }
         }
       },
@@ -2716,7 +3548,7 @@
     },
     {
       "name": "Tree_22_Visual",
-      "mesh": 21,
+      "mesh": 27,
       "scale": [
         1.28,
         1.9712,
@@ -2731,7 +3563,7 @@
         12.32
       ],
       "children": [
-        116
+        149
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2739,7 +3571,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 19
+            "shape": 24
           }
         }
       },
@@ -2756,7 +3588,7 @@
     },
     {
       "name": "Tree_23_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.76,
         2.464,
@@ -2771,7 +3603,7 @@
         -17.6
       ],
       "children": [
-        118
+        151
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2779,7 +3611,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 14
+            "shape": 19
           }
         }
       },
@@ -2796,7 +3628,7 @@
     },
     {
       "name": "Tree_24_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.6,
         2.24,
@@ -2811,7 +3643,7 @@
         -10.4
       ],
       "children": [
-        120
+        153
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2819,7 +3651,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 13
+            "shape": 18
           }
         }
       },
@@ -2836,7 +3668,7 @@
     },
     {
       "name": "Tree_25_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.76,
         2.576,
@@ -2851,7 +3683,7 @@
         -1.6
       ],
       "children": [
-        122
+        155
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2859,7 +3691,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 12
+            "shape": 17
           }
         }
       },
@@ -2876,7 +3708,7 @@
     },
     {
       "name": "Tree_26_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.68,
         2.352,
@@ -2891,7 +3723,7 @@
         7.2
       ],
       "children": [
-        124
+        157
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2899,7 +3731,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 20
+            "shape": 25
           }
         }
       },
@@ -2916,7 +3748,7 @@
     },
     {
       "name": "Tree_27_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.52,
         2.128,
@@ -2931,7 +3763,7 @@
         13.6
       ],
       "children": [
-        126
+        159
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2939,7 +3771,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 17
+            "shape": 22
           }
         }
       },
@@ -2956,7 +3788,7 @@
     },
     {
       "name": "Tree_28_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.44,
         2.128,
@@ -2971,7 +3803,7 @@
         -13.6
       ],
       "children": [
-        128
+        161
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -2979,7 +3811,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 15
+            "shape": 20
           }
         }
       },
@@ -2996,7 +3828,7 @@
     },
     {
       "name": "Tree_29_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.44,
         2.128,
@@ -3011,7 +3843,7 @@
         7.8
       ],
       "children": [
-        130
+        163
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -3019,7 +3851,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 15
+            "shape": 20
           }
         }
       },
@@ -3036,7 +3868,7 @@
     },
     {
       "name": "Tree_30_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.44,
         2.128,
@@ -3051,7 +3883,7 @@
         -3.2
       ],
       "children": [
-        132
+        165
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -3059,7 +3891,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 15
+            "shape": 20
           }
         }
       },
@@ -3076,7 +3908,7 @@
     },
     {
       "name": "Tree_31_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.52,
         2.24,
@@ -3091,7 +3923,7 @@
         8.8
       ],
       "children": [
-        134
+        167
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -3099,7 +3931,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 21
+            "shape": 26
           }
         }
       },
@@ -3116,7 +3948,7 @@
     },
     {
       "name": "Tree_32_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.76,
         2.464,
@@ -3131,7 +3963,7 @@
         25.6
       ],
       "children": [
-        136
+        169
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -3139,7 +3971,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 14
+            "shape": 19
           }
         }
       },
@@ -3156,7 +3988,7 @@
     },
     {
       "name": "Tree_33_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.6,
         2.24,
@@ -3171,7 +4003,7 @@
         27.2
       ],
       "children": [
-        138
+        171
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -3179,7 +4011,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 13
+            "shape": 18
           }
         }
       },
@@ -3196,7 +4028,7 @@
     },
     {
       "name": "Tree_34_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.52,
         2.128,
@@ -3211,7 +4043,7 @@
         26.8
       ],
       "children": [
-        140
+        173
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -3219,7 +4051,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 17
+            "shape": 22
           }
         }
       },
@@ -3236,7 +4068,7 @@
     },
     {
       "name": "Tree_35_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.6,
         2.24,
@@ -3251,7 +4083,7 @@
         26.6
       ],
       "children": [
-        142
+        175
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -3259,7 +4091,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 13
+            "shape": 18
           }
         }
       },
@@ -3276,7 +4108,7 @@
     },
     {
       "name": "Tree_36_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.76,
         2.464,
@@ -3291,7 +4123,7 @@
         27.2
       ],
       "children": [
-        144
+        177
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -3299,7 +4131,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 14
+            "shape": 19
           }
         }
       },
@@ -3316,7 +4148,7 @@
     },
     {
       "name": "Tree_37_Visual",
-      "mesh": 20,
+      "mesh": 26,
       "scale": [
         1.68,
         2.352,
@@ -3331,7 +4163,7 @@
         25.2
       ],
       "children": [
-        146
+        179
       ],
       "extensions": {
         "OMI_physics_body": {
@@ -3339,7 +4171,7 @@
             "type": "static"
           },
           "collider": {
-            "shape": 20
+            "shape": 25
           }
         }
       },
@@ -3578,7 +4410,7 @@
       ]
     },
     {
-      "name": "bridgeWest_Mesh",
+      "name": "TrafficGameCenter_Floor_Mesh",
       "primitives": [
         {
           "attributes": {
@@ -3591,6 +4423,84 @@
       ]
     },
     {
+      "name": "TrafficGameCenter_Roof_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 18
+        }
+      ]
+    },
+    {
+      "name": "TrafficGameCenter_WallNorth_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 19
+        }
+      ]
+    },
+    {
+      "name": "TrafficGameCenter_Cabinet1_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 20
+        }
+      ]
+    },
+    {
+      "name": "TrafficGameCenter_CityDioramaTable_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 21
+        }
+      ]
+    },
+    {
+      "name": "TrafficCenterStool_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 3,
+            "NORMAL": 4
+          },
+          "indices": 5,
+          "material": 22
+        }
+      ]
+    },
+    {
+      "name": "bridgeWest_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 23
+        }
+      ]
+    },
+    {
       "name": "well_Mesh",
       "primitives": [
         {
@@ -3599,7 +4509,7 @@
             "NORMAL": 4
           },
           "indices": 5,
-          "material": 18
+          "material": 24
         }
       ]
     },
@@ -3612,7 +4522,7 @@
             "NORMAL": 4
           },
           "indices": 5,
-          "material": 19
+          "material": 25
         }
       ]
     },
@@ -3625,7 +4535,7 @@
             "NORMAL": 4
           },
           "indices": 5,
-          "material": 20
+          "material": 26
         }
       ]
     },
@@ -3638,7 +4548,7 @@
             "NORMAL": 4
           },
           "indices": 5,
-          "material": 21
+          "material": 27
         }
       ]
     }
@@ -3859,6 +4769,84 @@
           0.0262,
           0.1441,
           0.0782,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "TrafficCenterFloor",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0331,
+          0.0529,
+          0.0908,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "TrafficCenterRoof",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0262,
+          0.0685,
+          0.1529,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "TrafficCenterWall",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.7758,
+          0.807,
+          0.8388,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "TrafficCenterCabinetMat",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.013,
+          0.0222,
+          0.0437,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "TrafficCenterTableMat",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0437,
+          0.0742,
+          0.1248,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      }
+    },
+    {
+      "name": "TrafficCenterStool",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0185,
+          0.1248,
+          0.8308,
           1
         ],
         "metallicFactor": 0,

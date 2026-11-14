@@ -12,8 +12,8 @@ Open-standard 3D spatial assets (`ISO/IEC 12113` Khronos glTF 2.0 / `.glb`, Open
 | `yasu.vrm.glb` | `model/gltf-binary` | `CC-BY-4.0` | `glTF 2.0`, `VRMC_vrm-1.0` |
 | `assets.manifest.json` | `application/json` | `CC0-1.0` | `SHA-256` & Subresource Integrity (`sri`) manifest |
 
-## Immutable CDN Endpoints (`v0.1.0`)
+## Immutable CDN Endpoints (`v0.2.0`)
 
-- `https://cdn.jsdelivr.net/gh/tng-coop/comgame-open-assets@v0.1.0/world.glb`
-- `https://cdn.jsdelivr.net/gh/tng-coop/comgame-open-assets@v0.1.0/panasonic-xm1.glb`
-- `https://cdn.jsdelivr.net/gh/tng-coop/comgame-open-assets@v0.1.0/yasu.vrm.glb`
+- `https://cdn.jsdelivr.net/gh/tng-coop/comgame-open-assets@v0.2.0/world.glb`
+- `https://cdn.jsdelivr.net/gh/tng-coop/comgame-open-assets@v0.2.0/panasonic-xm1.glb`
+- `https://cdn.jsdelivr.net/gh/tng-coop/comgame-open-assets@v0.2.0/yasu.vrm.glb`
